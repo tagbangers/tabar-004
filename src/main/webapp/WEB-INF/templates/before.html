@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Thymeleaf 3 + Spring 4 example</title>
+        <meta charset="utf-8" />
+	</head>
+	<body>
+        <h1>Thymeleaf 3 + Spring 4 example</h1>
+        <p>
+            Hello <span th:text="${recipient}">Peter!!!</span>
+        </p>
+		<table th:remove="all-but-first">
+			<tr th:each="user : ${users}">
+				<td th:text="${user.firstname}" class="firstname">Jeremy Grapefruit</td>
+				<td th:text="${user.firstname}" class="lastname">Normal User</td>
+			</tr>
+			<tr>
+				<td class="firstname">Alice Watermelon</td>
+				<td class="lastname">Administrator</td>
+			</tr>
+		</table>
+	</body>
+</html>
