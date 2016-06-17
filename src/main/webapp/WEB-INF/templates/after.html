@@ -6,9 +6,11 @@
 	</head>
 	<body>
         <h1>Thymeleaf 3 + Spring 4 example</h1>
-        <p>
-            Hello <span th:text="${recipient} ?: _">Peter!!!
-        </p>
+
+		<p>Hello <span th:text="${recipient} ?: _">Peter!!!</p>
+
+		<p>Hello [[${recipient2}]]!!!</p>
+
 		<table id="usersTable">
 			<tr>
 				<td class="firstname">Jeremy Grapefruit</td>

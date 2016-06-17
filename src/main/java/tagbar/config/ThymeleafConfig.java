@@ -24,7 +24,7 @@ import javax.servlet.ServletContext;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.thymeleafexamples")
+@ComponentScan("tagbar")
 public class ThymeleafConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
     private static final String UTF8 = "UTF-8";
