@@ -6,9 +6,9 @@
 	</head>
 	<body>
         <h1>Thymeleaf 3 + Spring 4 example</h1>
-
-		<p>Hello <span th:text="${recipient}">Peter!!!</span></p>
-
+        <p>
+            Hello <span th:text="${recipient}">Peter!!!</span>
+        </p>
 		<table th:remove="all-but-first">
 			<tr th:each="user : ${users}">
 				<td th:text="${user.firstname}" class="firstname">Jeremy Grapefruit</td>

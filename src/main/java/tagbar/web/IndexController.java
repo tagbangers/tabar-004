@@ -30,7 +30,6 @@ public class IndexController {
 	@RequestMapping(value = "/after", method = RequestMethod.GET)
 	public String after(Model model) {
 		//model.addAttribute("recipient", "World");
-		model.addAttribute("recipient2", "World");
 		return "after.html";
 	}
 }
